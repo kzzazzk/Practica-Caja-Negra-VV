@@ -1,0 +1,15 @@
+content,recursive,success
+-3000,true,false
+-3000,false,false
+-2500,true,true
+-2500,false,true
+-2499,true,true
+-2499,false,true
+1000,true,true
+1000,false,true
+2498,true,true
+2498,false,true
+2499,true,true
+2499,false,true
+3000,true,false
+3000,false,false
