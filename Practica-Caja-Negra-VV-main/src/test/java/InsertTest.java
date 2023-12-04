@@ -7,7 +7,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 class InsertTest {
-
     @ParameterizedTest
     @CsvFileSource(resources = "/InsertTest.csv", numLinesToSkip = 1, delimiterString = ",")
     void testInsert(int content, boolean recursive, boolean expectedSuccess) {
