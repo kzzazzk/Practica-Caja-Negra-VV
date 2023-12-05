@@ -2,14 +2,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import com.bst.BST;
 
 import com.exceptions.DepthException;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-class InsertTest {
+class Insert2ParamTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/InsertTest.csv", numLinesToSkip = 1, delimiterString = ",")
+    @CsvFileSource(resources = "/Insert2ParamTest.csv", numLinesToSkip = 1, delimiterString = ",")
     void testInsert(int content, boolean recursive, boolean expectedSuccess) {
         BST<Integer> bst = new BST<>();
         try {
