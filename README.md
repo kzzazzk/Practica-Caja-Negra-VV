@@ -11,7 +11,7 @@
 ```bash
 git clone https://github.com/kzzazzk/Practica-Caja-Negra-VV.git
 cd Practica-Caja-Negra-VV
-
+```
 ### 2. Install BST Dependency
 #### Steps
 - Using IntelliJ IDEA:
