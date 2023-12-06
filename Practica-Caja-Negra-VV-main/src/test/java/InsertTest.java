@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
     max: 2499
     max+: 2500
     Falla con max+ (2500), supondremos que esto es porque en la implementación algo falla.
- */
+*/
 class InsertTest {
     BST<Integer> bst = new BST<>();
     @ParameterizedTest
@@ -21,7 +21,8 @@ class InsertTest {
     void insertTest(int content, boolean recursive, boolean expectedSuccess) {
         try {
             bst.insert(content, recursive);
-            assertTrue(expectedSuccess);
+            boolean v = bst.search(content) != null;
+            assertEquals(expectedSuccess,v);
         } catch (DepthException e) {
             assertEquals("DepthException", e.getClass().getSimpleName());
         }

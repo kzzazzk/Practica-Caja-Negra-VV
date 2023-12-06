@@ -22,13 +22,13 @@ public class GetRootTest {
     @org.junit.jupiter.api.BeforeEach
     void setUp() throws DepthException {
         bstArrayList = new ArrayList<>();
-        generatedNumbersList = new ArrayList<>();  // Initialize the list
+        generatedNumbersList = new ArrayList<>();
 
         for (int i = -2500; i < 2500; i++) {
             Set<Integer> aux = new HashSet<>();
             aux.add(i);
             bstArrayList.add(new BST<>(i));
-            generatedNumbersList.add(aux);// Add a new HashSet for each BST
+            generatedNumbersList.add(aux);
         }
 
         for (int i = 0; i < 5000; i++) {
