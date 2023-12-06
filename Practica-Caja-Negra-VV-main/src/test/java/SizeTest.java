@@ -18,7 +18,7 @@ public class SizeTest {
        pruebaSize  = new ArrayList<>();
        for(int i = 0; i < 10; i++)
        {
-           pruebaSize.add(new BST<Integer>());
+           pruebaSize.add(new BST<>());
            for(int j = 0 ; j < i+1; j++)
            {
                pruebaSize.get(i).insert(42*j, true);

@@ -31,20 +31,16 @@ public class PrintBetweenLevelTest {
         bst.insert(400, true);
         bst.insert(1250, true);
     }
-    /*Para ambos valores a y b usamos:
-+max=51, max = 50, -max = 49, nominal = 24, -min = 1, min = 0, +min = -1
-*/
     @ParameterizedTest
     @CsvFileSource(resources = "PrintBetweenPrueba.csv", numLinesToSkip = 1, delimiterString = ",")
-    void PBLtest(int levelA, int levelB, int result) {
+    void PBLTest(int levelA, int levelB, int result) {
         try
         {
             List<Integer> esperado = new ArrayList<>();
             esperado.add(result);
-            List<Integer> obtenido = new ArrayList<>();
+            List<Integer> obtenido;
             obtenido = bst.printBetweenLevel(levelA, levelB);
-
-            assertEquals(esperado, obtenido, "Resultado correcto");
+            assertEquals(esperado, obtenido);
 
         } catch(BetweenLevelException betweenLevelException)
         {

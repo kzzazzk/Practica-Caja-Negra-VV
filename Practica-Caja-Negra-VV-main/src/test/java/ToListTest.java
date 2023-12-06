@@ -19,7 +19,7 @@ public class ToListTest {
         pruebaToList  = new ArrayList<>();
         for(int i = 0; i < 10; i++)
         {
-            pruebaToList.add(new BST<Integer>());
+            pruebaToList.add(new BST<>());
             for(int j = 0 ; j < i+1; j++)
             {
                 pruebaToList.get(i).insert(j+1, true);

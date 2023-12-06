@@ -26,7 +26,9 @@ public class SearchTest {
             "5, true",
             "2498, true",
             "2499, true",
+            "350, true",
             "2500, false"
+
     })
     void searchPrueba(int p, boolean result)
     {
