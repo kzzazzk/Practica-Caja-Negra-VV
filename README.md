@@ -1,28 +1,28 @@
-## Prerequisites
-- Java Development Kit (JDK)
-- IntelliJ IDEA (optional, but recommended)
+## Requisitos previos
+- Kit de Desarrollo Java (JDK)
+- IntelliJ IDEA (opcional, pero recomendado)
 - Maven
 - JUnit4
 
-## Steps
+## Pasos
 
-### 1. Clone the Repository
+### 1. Clonar el Repositorio
 
 ```bash
 git clone https://github.com/kzzazzk/Practica-Caja-Negra-VV.git
 cd Practica-Caja-Negra-VV
 ```
-### 2. Install BST Dependency
-#### Steps
-- Using IntelliJ IDEA:
-  Open IntelliJ IDEA.
-  File -> Project Structure.
-  Under "Project Settings," select "Modules."
-  Click on the "Dependencies" tab.
-  Click on the '+' button and choose "JARs or directories."
-  Select the BST.jar file.
-  Click "Apply" and then "OK."
-- Using Maven:
-  If you have Maven installed on your computer, execute the following command in the project directory:
+### 2. Instalar dependencia BST
+#### Pasos
+- Usando IntelliJ IDEA:
+   1. Abrir IntelliJ IDEA.
+   2. Archivo -> Estructura de Proyecto.
+   3. Debajo de "Ajustes de proyecto", selecciona "Modulos".
+   4. Haz click en la ventana "Dependencias"
+   5. Haz clic en el botón '+' y elige "JARs o directorios."
+   6. Selecciona el archivo BST.jar.
+   7. Haz clic en "Aplicar" y luego en "Aceptar."
+- Utilizando Maven:
+  1. Si tienes Maven instalado en tu computadora, ejecuta el siguiente comando en el directorio del proyecto:
 ```bash
 mvn install:install-file -Dfile=C:\BST.jar -DgroupId=com.BST -DartifactId=BST -Dversion=1.0 -Dpackaging=jar
