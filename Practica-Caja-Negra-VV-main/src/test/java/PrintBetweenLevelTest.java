@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PrintBetweenLevelTest {
     BST<Integer> bst;
     @org.junit.jupiter.api.BeforeEach
-    void setUp() throws DepthException, BetweenLevelException {
+    void setUp() throws DepthException {
         bst = new BST<>();
 
         bst.insert(125, true);
@@ -31,9 +31,12 @@ public class PrintBetweenLevelTest {
         bst.insert(400, true);
         bst.insert(1250, true);
     }
+    /*Para ambos valores a y b usamos:
++max=51, max = 50, -max = 49, nominal = 24, -min = 1, min = 0, +min = -1
+*/
     @ParameterizedTest
     @CsvFileSource(resources = "PrintBetweenPrueba.csv", numLinesToSkip = 1, delimiterString = ",")
-    void PBLtest(int levelA, int levelB, int result) throws BetweenLevelException {
+    void PBLtest(int levelA, int levelB, int result) {
         try
         {
             List<Integer> esperado = new ArrayList<>();
